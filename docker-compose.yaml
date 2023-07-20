@@ -1,0 +1,10 @@
+services:
+  prometheus-envconf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 9000:9092
+    environment:
+      - PROM_PORT=9092
+      - PROM_CONFIG=Z2xvYmFsOgogIHNjcmFwZV9pbnRlcnZhbDogMzBzCiAgc2NyYXBlX3RpbWVvdXQ6IDEwcwoKc2NyYXBlX2NvbmZpZ3M6CiAgLSBqb2JfbmFtZTogc2VydmljZXMKICAgIG1ldHJpY3NfcGF0aDogL21ldHJpY3MKICAgIHN0YXRpY19jb25maWdzOgogICAgICAtIHRhcmdldHM6CiAgICAgICAgICAtICdwcm9tZXRoZXVzOjkwOTAnCiAgICAgICAgICAtICdjb2RleC1ub2RlMTo5MDkwJwogICAgICAgICAgLSAnY29kZXgtbm9kZTI6OTA5MScKICAgICAgICAgIC0gJ2NvZGV4LW5vZGUzOjkwOTInCg==
